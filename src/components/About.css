@@ -1,0 +1,81 @@
+/* Scoped About Page Content */
+.about-content {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #f4f8f3, #ffffff);
+  font-family: 'Lato', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+  font-size: 2.8rem;
+  color: #6B8E23;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 3px solid #6B8E23;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Specific Sections */
+.mission-section,
+.vision-section,
+.history-section,
+.donors-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission-section h2,
+.vision-section h2,
+.history-section h2,
+.donors-section h2 {
+  font-size: 2.4rem;
+  color: #6B8E23;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mission-section p,
+.vision-section p,
+.history-section p,
+.donors-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Donate Button */
+.donate-button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  background-color: #6B8E23; /* Olive green */
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #8FBC8F; /* Lighter olive */
+  transform: translateY(-2px);
+}

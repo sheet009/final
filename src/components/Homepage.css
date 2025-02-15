@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  background-color: #F8F3E6; 
+  color: #2C3E50; /* Dark Charcoal */
+}
+
+
+
+.homepage h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 550;
+  font-size: 2.5rem;
+  color: #2E5339; /* Deep Green */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  background-color: #ad9f1d; /* Warm Orange */
+  color: white;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #7a8a11; /* Darker Orange for hover */
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.homepage .hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the video stays behind the content */
+}
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire section */
+}
+.hero-content {
+  position: relative;
+  z-index: 1; /* Ensure the content stays above the video */
+  text-align: center;
+  color: #F8F3E6; /* Light Beige */
+}
+
+.homepage .hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color:#2E5339;
+}
+
+.homepage .hero-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #F1C40F; /* Soft Gold */
+}
+#hero-button {
+  display: block;  /* Make it a block element */
+  margin: 20px auto; /* Auto margins center it horizontally */
+  padding: 10px 20px;
+  background-color: #ad9f1d;;
+}
+
+/* Welcome Banner */
+.homepage .welcome-banner {
+  text-align: center;
+  /* background-color: #ffffff; Light Beige */
+  padding: 20px;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.homepage .welcome-banner h1 {
+  font-size: 2.5rem;
+  color: #2E5339; /* Deep Green */
+  margin-bottom: 10px;
+}
+
+.homepage .welcome-banner p {
+  font-size: 1.3rem;
+  color: #2C3E50; /* Dark Charcoal */
+}
+
+/* How It Works Section */
+.homepage .how-it-works h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #2E5339; /* Deep Green */
+  text-align: center;
+  text-transform: none;
+}
+
+.homepage .how-it-works p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #2C3E50; /* Dark Charcoal */
+}
+
+.homepage .how-it-works-steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.homepage .how-it-works-step {
+  background-color: #FFFFFF; /* White for contrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.homepage .how-it-works-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.homepage .how-it-works-step img {
+  width: 350px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.homepage .how-it-works-step h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: #2E5339; /* Deep Green */
+  text-transform: none;
+}
+
+.homepage .how-it-works-step p {
+  font-size: 1.3rem;
+  color: #2C3E50; /* Dark Charcoal */
+}
+
+/* Impact & Reach Section */
+.homepage .impact-reach {
+  text-align: center;
+  padding: 60px 30px;
+  /* background: linear-gradient(to bottom, #ffffff, #FFFFFF); */
+}
+
+.homepage .impact-reach h2 {
+  font-size: 3rem;
+  color: #2E5339; /* Deep Green */
+  margin-bottom: 40px;
+  text-transform: none;
+}
+
+/* Impact Fact Cards */
+.homepage .impact-reach .fact-card {
+  background-color: #FFFFFF; /* White for contrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.homepage .impact-reach .fact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.homepage .impact-reach .fact-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2E5339; /* Deep Green */
+  text-transform: none;
+}
+
+.homepage .impact-reach .fact-card p {
+  font-size: 1.3rem;
+  color: #2C3E50; /* Dark Charcoal */
+}
+
+.homepage .impact-reach .facts {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Call to Action Section */
+.homepage .cta {
+  background-color: #FFFFFF; /* White for contrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+#impact-button {
+  margin-top: 50px;
+}
+
+.homepage .cta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+#hero-button {
+  margin-left: 40%;
+}
+
+.homepage .cta h2 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  color: #2E5339; /* Deep Green */
+  text-transform: none;
+}
+
+.homepage .cta p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #2C3E50; /* Dark Charcoal */
+}
+
+.homepage .cta button {
+  background-color: #E67E22; /* Warm Orange */
+  color: white;
+  font-size: 1.6rem;
+  padding: 15px 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.homepage .cta button:hover {
+  background-color: #D35400; /* Darker Orange */
+  transform: translateY(-2px);
+}
+
+.homepage .cta button:focus {
+  outline: none;
+}

@@ -1,0 +1,142 @@
+/* AdminDon.css - Refined and Modern Professional Styling */
+.admin-don-container {
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1600px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+.admin-don-container:hover {
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.admin-don-page h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  animation: fadeIn 1s ease-out;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Unified Table Styling */
+.donation-table, .user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  table-layout: auto;
+}
+
+.donation-table th, .user-table th, .donation-table td, .user-table td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  color: #495057;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.donation-table th, .user-table th {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.donation-table tbody tr:hover, .user-table tbody tr:hover {
+  background-color: #f1f3f5;
+  cursor: pointer;
+}
+
+.donation-table tbody tr:nth-child(odd), .user-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.donation-table tbody tr:nth-child(even), .user-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.delete-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+}
+
+.delete-button:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+.delete-button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(220, 53, 69, 0.6);
+}
+
+.no-data {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6c757d;
+  padding: 40px;
+}
+
+.no-data svg {
+  width: 60px;
+  height: 60px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .admin-don-container {
+    padding: 25px;
+    margin: 25px;
+    max-width: 100%;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .donation-table th, .user-table th, .donation-table td, .user-table td {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .delete-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

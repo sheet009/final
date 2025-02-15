@@ -1,0 +1,100 @@
+/* AdminUser.css - Professional Styling */
+.admin-users-container {
+  padding: 30px;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 1600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Unified Table Styling */
+.user-table, .donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th, .donation-table th, .user-table td, .donation-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  color: #495057;
+  font-size: 16px;
+}
+
+.user-table th, .donation-table th {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.user-table tbody tr:hover, .donation-table tbody tr:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.user-table tbody tr:nth-child(odd), .donation-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.user-table tbody tr:nth-child(even), .donation-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.delete-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+.delete-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+@media (max-width: 768px) {
+  .admin-users-container {
+    padding: 20px;
+    margin: 20px;
+    max-width: 100%;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .user-table th, .donation-table th, .user-table td, .donation-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .delete-button {
+    padding: 6px 12px;
+  }
+}

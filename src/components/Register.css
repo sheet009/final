@@ -1,0 +1,161 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Background container for registration page */
+.App-header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem;
+}
+
+/* Registration heading */
+.register-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #2E5339;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Form styling */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #4A5568;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #E2E8F0;
+  border-radius: 12px;
+  background: white;
+  color: #2D3748;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #DF6D2D;
+  box-shadow: 0 0 0 4px rgba(223, 109, 45, 0.2);
+  outline: none;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232D3748'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+
+.form-group select:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-group select option {
+  padding: 1rem;
+  background-color: #fff;
+  color: #2D3748;
+}
+
+/* Error text styling */
+.error-text {
+  color: #F56565;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Button styling */
+button {
+  background-color: #DF6D2D;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #C55D26;
+}
+
+/* Success and error messages */
+.message {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.message.success {
+  background-color: #C6F6D5;
+  color: #2F855A;
+}
+
+.message.error {
+  background-color: #FED7D7;
+  color: #E53E3E;
+}
+
+/* Register container */
+.register-container {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.register-container a {
+  color: #DF6D2D;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 1.3rem;
+}
+
+.register-container a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #DF6D2D;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.register-container a:hover::after {
+  transform: scaleX(1);
+}

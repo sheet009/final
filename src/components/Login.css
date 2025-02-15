@@ -1,0 +1,224 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #E7FBB4, #ffffff);
+  color: #638C6D; /* Soft green for text */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #638C6D; /* Soft green */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: relative; /* To ensure the navbar content is aligned properly */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  position: absolute; /* Position the brand on the far left */
+  left: 0;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  /* justify-content: center; Center the navbar items */
+  /* flex-grow: 1; Ensure the list takes up the available space and is centered */
+  margin-left: auto;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #DF6D2D; /* Warm orange */
+}
+
+/* App Container */
+.App-header {
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border: 2px solid #638C6D;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.App-header:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+}
+
+/* Login Form */
+.login-container {
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border: 2px solid #638C6D;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #638C6D;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.error-text {
+  color: #C84C05; /* Deep orange */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #6c757d; /* Muted grey */
+}
+
+input {
+  width: 95%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #638C6D;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #DF6D2D;
+  background-color: white;
+}
+
+/* Button */
+.logbutton {
+  padding: 15px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #DF6D2D;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logbutton:hover {
+  background-color: #C84C05;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(207, 109, 45, 0.4);
+}
+
+.logbutton:active {
+  transform: translateY(2px);
+}
+
+/* Redirect Link */
+.register-redirect {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #6c757d;
+}
+
+.register-redirect a {
+  color: #DF6D2D;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-redirect a:hover {
+  color: #C84C05;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #638C6D;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #DF6D2D;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #C84C05;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .App-header {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #6c757d; /* Muted grey for the text */
+  text-align: center;
+}
+
+.forgot-password a {
+  color: #DF6D2D; /* Warm orange color for the link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #C84C05; /* Slightly darker orange on hover */
+  text-decoration: underline;
+}
+
